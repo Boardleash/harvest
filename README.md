@@ -1,5 +1,6 @@
 # harvest
 ![Alt text](./images/harvest_image.gif)
+
 Bash script to capture certain host information, hardware information and user information on a Linux host.
 
 ## Description
