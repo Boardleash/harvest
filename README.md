@@ -11,9 +11,9 @@ The information retrieved consists of the following:
 
 >	- *User executing the script*
 >	- *Host name*
->	*- Operating System*
->	*- Kernel*
->	*- Hardware Model*
+>	- *Operating System*
+>	- *Kernel*
+>	- *Hardware Model*
 >	- *CPU model*
 >	- *If virtualization is enabled*
 >	- *Total online/offline RAM*
@@ -24,11 +24,11 @@ The information retrieved consists of the following:
 >	- *Files that are open by the logged in user*
 >	- *List of users that exist on the host*
 
-This information is presented to the user on the terminal as well as saved in two particular files (***.harvest*** and ***.harvest.txt***) in the ***/tmp*** directory.  These are **hidden** files.  The interaction revolves around whether the user has gotten all of the information they were after.  The user is asked if they have gotten all of the information they wanted/needed and can respond with a "**yes**" or "**no**".
+This information is presented to the user on the terminal as well as saved in one particular file (***.harvest***) in the ***/tmp*** directory.  This is a **hidden** file.  The interaction revolves around whether the user has gotten all of the information they were after.  The user is asked if they have gotten all of the information they wanted/needed and can respond with a "**yes**" or "**no**".
 
-If a "**yes**" is provided, then the script will automatically delete the ***.harvest*** and ***.harvest.txt*** files in the ***/tmp*** directory and clear the user's terminal.
+If a "**yes**" is provided, then the script will automatically delete the ***.harvest*** file in the ***/tmp*** directory and clear the user's terminal.
 
-If a "**no**" is provided, then the script will allow the user another 30 seconds to do what they need to before automatically deleting the ***.harvest*** and ***.harvest.txt*** files in the ***/tmp*** directory and clearing the user's terminal.
+If a "**no**" is provided, then the script will allow the user another 30 seconds to do what they need to before automatically deleting the ***.harvest*** file in the ***/tmp*** directory and clearing the user's terminal.
 
 ## Technologies Used
 
@@ -44,7 +44,7 @@ The major difference between the two scripts is how the "**w**" command output i
 
 ## How To Download and Use
 
-###### Method 1: Directly from my GitHub Repository
+###### Method 1: Directly from GitHub Repository
 
 >	If not already in the repository, access it via the link below:
 >		https://github.com/Boardleash/harvest/
@@ -56,6 +56,7 @@ The major difference between the two scripts is how the "**w**" command output i
 >	After the download is complete, go to where you downloaded the file.  The file will likely have been downloaded as a text file (.txt extension).  Rename the file to "**harvest**" (don't inlcude the .txt extension).
 
 >	Right click the file and click on "**Properties**", then click on the "**Permissions**" tab.  Check the "**Allow executing file as program**" box.
+>		If this is already checked, then there is nothing more to change.
 
 >	After doing the above, you can right click on the file and select the "**Run as a program**" option.  The script will open a terminal session and execute.
 
@@ -93,7 +94,5 @@ The major difference between the two scripts is how the "**w**" command output i
 >		- *no*
 >		- *N*
 >		- *n*
->	
->	- The difference between the ***.harvest*** and ***.harvest.txt*** files is that the ***.harvest*** file allows for the intro art and color formatting in the script to be presented when re-opening the file in the terminal; ***.harvest.txt*** excludes this special formatting
 >	
 >	- You do not NEED to run this script with elevated privileges, but you can if you choose.  You will also get some information pertaining to root
